@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="shortcut icon" href="img/moje logo.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav><i class="fa-solid fa-bars"></i></nav>
+    <hgroup>
+        <h1>Dawid Ławniczak</h1>
+        <h3><span>Robię strony,</span> Uwielbiam to co robię <i class="fa-solid fa-heart"></i></h3>
+    </hgroup>
+    <img src="img/2167.png">
+    <div id="arrow">
+    <i class="fa-solid fa-angle-down"></i>
+    </div>
+    
+</header>
+<main></main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+   var $arrow = $("#arrow a");
+   
+   $("#arrow").on("click", function() {
+     $("body, html").animate({
+        scrollTop: $("main").offset().top
+     }, 1200)
+   })
+
+</script>
+</body>
+</html>
