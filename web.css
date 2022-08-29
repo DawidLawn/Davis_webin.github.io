@@ -167,7 +167,10 @@ main h3{
     content:'\A';
     white-space:pre;
  }
-
+ header{
+    background-image:url(img/2167.png);
+    background-size:cover;
+ }
 }
 
 @media (orientation: landscape) {
