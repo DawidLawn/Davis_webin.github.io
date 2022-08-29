@@ -12,7 +12,8 @@ html{
 header{
     height:100vh;
     width:100%;
-    background-color:#333;
+    background-image:url(img/2167.png);
+    background-size:cover;
     position:fixed;
     top:0;
     left:0;
@@ -26,14 +27,7 @@ header nav{
     right:5%;
     top:2.5%;
     font-size: 3rem;
-}
-
-main {
-    height:100vh;
-    background-color:#333;
-    margin-top:100vh;
-    position:relative;
-    z-index:2;
+    z-index:3;
 }
 
 header hgroup{
@@ -42,14 +36,6 @@ header hgroup{
     left:10%;
     text-transform: uppercase;
     z-index: 1;
-}
-
-header img{
-    position:absolute;
-    bottom:0;
-    right:0;
-    height:75vh;
-    width:120vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
@@ -121,6 +107,61 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
   }
+
+  main {
+    height:100vh;
+    background-color:#333;
+    margin-top:100vh;
+    position:relative;
+    z-index:2;
+    overflow:hidden;
+    background-image:linear-gradient(to bottom, #222, #333);
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+#content{
+    position:relative;
+    top:3%;
+    margin-left:1rem;
+    margin-right:2rem;
+    border-left:1px solid white;
+    height:52%;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+main h3{
+    margin-left:1rem;
+    font-size:2rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.anim1{
+    width:5vh;
+    height:5vh;
+    background-color:white;
+    margin-bottom:2rem;
+    animation:circles 5s ease-in-out infinite;
+}
+
+.anim2{
+    width:5vh;
+    height:5vh;
+    background-color:white;
+    margin-top:3rem;
+    animation:circles 5s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+.yt_vid1{
+    position:relative;
+    top:10vh;
+    left:5vh;
+}
+
+
+
+
+
 @media (orientation: portrait) {
  h3 span::after{
     content:'\A';
@@ -136,7 +177,6 @@ body::-webkit-scrollbar {
         background-image: url(img/2167.png);
         background-size:cover;
      }
-     header img{ display:none;}
 }
 
 
@@ -150,6 +190,10 @@ body::-webkit-scrollbar {
         font-size:4rem;
     }
    header h1{ font-size:6rem;}
+   main h3{
+    font-size:3.6em;
+    font-family: 'IBM Plex Serif', serif;
+}
 }
 @media screen and (min-width: 840px){
    header{
@@ -157,10 +201,6 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
    }
-   
-    header img{
-       display:none;
-    }
 
     #arrow{
         width:100px;
@@ -190,6 +230,16 @@ body::-webkit-scrollbar {
     nav .fa-solid {
         display:none;
     }
+    main h3{
+        font-size:3.4rem;
+        font-family: 'IBM Plex Serif', serif;
+    }
+    .yt_vid1{
+        width:50%;
+        height:40%;
+        margin-left:23%;
+        margin-right: auto;
+    }
 }
 
 
@@ -208,4 +258,15 @@ body::-webkit-scrollbar {
     header hgroup {
         transform:rotate(-15deg);
     }
+    main h3{
+        font-size:1.5rem;
+        font-family: 'IBM Plex Serif', serif;
+    }
+}
+
+@keyframes circles {
+    0%{transform:translateX(0px); border-radius:0%; background-color:rgb(255, 255, 255);}
+    10%{border-radius:10%;}
+    50%{transform:translateX(800%); border-radius:60%; background-color:rgb(170, 255, 131);}
+    100%{transform:translateX(0px); border-radius:0%; background-color:rgb(255, 255, 255);}
 }
