@@ -186,6 +186,9 @@ main h3{
      main h3{
         font-size:1.5rem;
      }
+     main{
+        height:200vh;
+     }
 }
 
 
