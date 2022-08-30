@@ -7,6 +7,11 @@
 html{
     font-size:10px;
     color:aliceblue;
+    overflow-x:hidden;
+}
+:root{
+    --blue: #e8e8e8;
+    --blueHover: #dfbdf7;
 }
 
 header{
@@ -22,13 +27,6 @@ header{
     z-index:1;
 }
 
-header nav{
-    position:absolute;
-    right:5%;
-    top:2.5%;
-    font-size: 3rem;
-    z-index:3;
-}
 
 header hgroup{
     position:absolute;
@@ -89,12 +87,6 @@ position:relative;
 transform:translateY(10px);
 }
 
-nav .fa-solid {
-    position:fixed;
-    top:5vh;
-    right:5vh;
-    z-index:2;
-}
 
 body::-webkit-scrollbar {
     width: 4px;               /* width of the entire scrollbar */
@@ -153,16 +145,6 @@ main h3{
     animation:circles 5s ease-in-out infinite;
     animation-delay: 2.5s;
 }
-
-.yt_vid1{
-    position:relative;
-    top:10vh;
-    left:5vh;
-}
-
-
-
-
 
 @media (orientation: portrait) {
  h3 span::after{
@@ -239,19 +221,12 @@ main h3{
     header h3 .fa-solid{
         font-size: 4rem;
     }
-    nav .fa-solid {
-        display:none;
-    }
+
     main h3{
-        font-size:3.4rem;
+        font-size:3rem;
         font-family: 'IBM Plex Serif', serif;
     }
-    .yt_vid1{
-        width:50%;
-        height:40%;
-        margin-left:23%;
-        margin-right: auto;
-    }
+
 }
 
 
