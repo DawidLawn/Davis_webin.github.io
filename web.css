@@ -245,6 +245,10 @@ main h3{
      main{
         height:100vh;
      }
+     .press{
+        width:40vh;
+        left:40%;
+     }
 }
 
 @media (max-width:320px){
@@ -290,6 +294,27 @@ main h3{
  #arrow{
      transform:scale(2.4);
  }
+
+ #info .hel{
+    font-size:6rem;
+    text-align:center;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    animation:up_down 8s linear infinite;
+}
+
+#info h3{
+    font-size:3rem;
+    text-align:justify;
+    margin-left:2rem;
+    margin-right:2rem;
+}
+
+#info h2{
+    font-size:4.6rem;
+    margin-top:2rem;
+    margin-left:2rem;
+}
  }
 
 @media screen and (min-width: 840px){
