@@ -348,6 +348,10 @@ main h3{
     margin-top:2rem;
     margin-left:2rem;
 }
+
+#exp h2{
+    font-size:2rem;
+}
  }
 
 @media screen and (min-width: 840px){
