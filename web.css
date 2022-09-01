@@ -249,6 +249,10 @@ main h3{
         width:40vh;
         left:40%;
      }
+
+     #info{
+        height:200vh;
+     }
 }
 
 @media (max-width:320px){
