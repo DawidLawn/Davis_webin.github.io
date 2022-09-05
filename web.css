@@ -117,6 +117,7 @@ body::-webkit-scrollbar {
     border-top-right-radius: 2%;
     border-top-left-radius: 2%;
     scroll-behavior:smooth;
+    overflow: hidden;
 }
 
 #content{
