@@ -92,6 +92,11 @@ body{
         box-shadow:none;
     }
 
+    header{
+        animation:none;
+        box-shadow:none;
+    }
+
     header .fa-solid{
         font-size:6rem;
     }
