@@ -16,20 +16,18 @@
 <body>
 <header>
   <nav class="navbar">
-    <div class="brand-title">Menu</div>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-    <ul>
-      <a href="#"><li>Home</li></a>
-      <a href="under website/index1.html"><li>About</li></a>
-      <a href="#"><li>Contanct</li></a>
-      <a href="#"><li>Informations</li></a>
-    </ul>
-  </div>
+    <div class="topnav">
+      <a href="#home" class="active">Davis</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="under website/index1.html">Info</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
   </nav>
     <hgroup>
         <h1>Dawid Ławniczak</h1>
@@ -69,13 +67,7 @@ prac jeszcze wiele się zmieni. </h3>
 
 
 
-<script src="web.js">
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-  
-  toggleButton.addEventListener('click', () => {
-      navbarLinks.classList.toggle('active')
-  })</script>
+<script src="web.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
    var $arrow = $("#arrow a");

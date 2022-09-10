@@ -92,74 +92,44 @@ transform:translateY(10px);
 }
 
 /*navbar styling*/
-header nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:10%;
-    z-index:5;
-    display:none;
-}
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color:#333;
-    color:white;
-    display:none;
-}
-
-.brand-title{
-    font-size:1.5rem;
-    margin: .5rem
-}
-
-.navbar-links ul{
-    margin:0;
-    padding:0;
-    display:flex;
-}
-
-.navbar-links li{
-    list-style: none;
-    margin-left:20px;
-    margin-right:10px;
-    font-size:3rem;
-    transition: all 0.14s linear;
-}
-
-.navbar-links li a{
-    text-decoration:none;
-    color:white;
-    padding:1rem;
-    display:block;
-    opacity:0.8;
-}
-
-.navbar-links li:hover{
-    opacity:1;
-    transform:scale(1.1);
-}
-
-.toggle-button{
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #333;
+    display: block;
     position: absolute;
-    top: .75rem;
-    right:1rem;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:30px;
-    height:21px;
+    right: 0;
+    top: 0;
+  }
 
-}
-
-.toggle-button .bar{
-height:3px;
-width:100%;
-background-color:white;
-border-radius: 10px;
-}
+  .topnav a{
+    position:relative;
+    z-index:4;
+    background-color:#333;
+    border-top:1px solid black;
+  }
+  
+  /* Style the active link */
 
 /*scrollbar stylign*/
 
@@ -288,30 +258,6 @@ main h3{
     font-size:2.6rem;
     margin-top:2rem;
     margin-left:2rem;
-}
-
-#exp{
-    position:relative;
-    top:27vh; left:0;
-    width:20vh;
-    height:22vh;
-    background-color:rgba(116, 116, 116, 0.138);;
-    transition:all 0.5s linear;
-    border:1px solid #333;
-    transform:translateY(20px);
-}
-#exp:hover{
-    transform:translateY(-1.8rem);
-    background-color:#333;
-}
-
-#exp h2{
-    font-size:2rem;
-    position:relative;
-    top:20%;
-    left:-10%;
-    text-align:center;
-    
 }
  a{
     color:white;
@@ -452,15 +398,14 @@ main h3{
 #exp h2{
     font-size:2rem;
 }
+
+.topnav .icon{
+    transform: scale(1.3);
+}
  }
 
- .navbar-links li{
-    font-size:20px;
-}
 
-.toggle-button{
-    display:none;
-}
+
 @media screen and (min-width: 840px){
    header{
     background-image: url(img/2167.png);
@@ -534,10 +479,4 @@ color:#333;
     10%{border-radius:10%;}
     50%{transform:translateX(800%); border-radius:60%; background-color:rgb(170, 255, 131);}
     100%{transform:translateX(0px); border-radius:0%; background-color:rgb(255, 255, 255);}
-}
-
-@keyframes up_down{
-    0%{transform: translateY(0);}
-    50%{transform: translateY(-1rem);}
-    100%{transform: translateY(0);}
 }
